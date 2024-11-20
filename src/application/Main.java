@@ -11,9 +11,17 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/Profile_.fxml"));
+//<<<<<<< HEAD
+        	//FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/Profile_.fxml"));
+//=======
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/Gestion_Etudiants.fxml"));
+//>>>>>>> branch 'master' of https://github.com/HAMZA-EL-OUATTAB/MINI_PROJET_JAVA.git
             Parent root = loader.load();
+//<<<<<<< HEAD
             Scene scene = new Scene(root, 900.0,600.0);
+//=======
+            //Scene scene = new Scene(root, 1000, 800);
+//>>>>>>> branch 'master' of https://github.com/HAMZA-EL-OUATTAB/MINI_PROJET_JAVA.git
 
             scene.getStylesheets().add(getClass().getResource("/View/application.css").toExternalForm());
             primaryStage.setTitle("Gestionnaire de Notes"); // Ajout du titre

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionensignantsController">
+   <children>
+      
+      <HBox layoutX="261.0" layoutY="94.0" prefHeight="81.0" prefWidth="739.0">
+         <AnchorPane.leftAnchor>261.0</AnchorPane.leftAnchor>
+         <AnchorPane.rightAnchor>0.0</AnchorPane.rightAnchor>
+         <AnchorPane.topAnchor>94.0</AnchorPane.topAnchor>
+         <children>
+            <Text style="-fx-font-size: 20px; -fx-padding: 10px;" text="Gestion des ensignants" />
+         </children>
+      </HBox>
+      
+      <TableView layoutX="261.0" layoutY="188.0" prefHeight="587.0" prefWidth="739.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #1E90FF; -fx-border-width: 1;">
+         <AnchorPane.topAnchor>188.0</AnchorPane.topAnchor>
+         <AnchorPane.leftAnchor>261.0</AnchorPane.leftAnchor>
+         <AnchorPane.rightAnchor>0.0</AnchorPane.rightAnchor>
+         <AnchorPane.bottomAnchor>25.0</AnchorPane.bottomAnchor>
+         <columns>
+           <TableColumn fx:id="CneColumn" style="-fx-background-color: #1E90FF; -fx-text-fill: white;" text="CNE" />
+            <TableColumn fx:id="NomColumn" prefWidth="207.0" style="-fx-background-color: #1E90FF; -fx-text-fill: white;" text="Nom" />
+            <TableColumn fx:id="PrenomColumn" prefWidth="140.0" style="-fx-background-color: #1E90FF; -fx-text-fill: white;" text="Prénom" />
+            <TableColumn fx:id="MatiereColumn" prefWidth="151.0" style="-fx-background-color: #1E90FF; -fx-text-fill: white;" text="Matière" />
+            <TableColumn fx:id="FiliereColumn" prefWidth="160.0" style="-fx-background-color: #1E90FF; -fx-text-fill: white;" text="Filière" />
+         </columns>
+      </TableView>
+
+                              <HBox alignment="CENTER" layoutX="443.0" layoutY="117.0" prefHeight="65.0" prefWidth="417.0" spacing="10.0">
+         <children>
+            <Button fx:id="ajouterButton" onAction="#ajouter" prefHeight="34.0" prefWidth="111.0" style="-fx-background-color: white; -fx-border-color: #1E90FF; -fx-border-width: 2; -fx-text-fill: #1E90FF; -fx-font-size: 14px; -fx-background-radius: 20; -fx-border-radius: 20;;" text="Ajouter" />
+            <Button fx:id="modifierButton" onAction="#modifier" prefHeight="34.0" prefWidth="103.0" style="-fx-background-color: white; -fx-border-color: #1E90FF; -fx-border-width: 2; -fx-text-fill: #1E90FF; -fx-font-size: 14px; -fx-background-radius: 20; -fx-border-radius: 20;;" text="Modifier" />
+            <Button fx:id="supprimerButton" onAction="#supprimer" style="-fx-background-color: white; -fx-border-color: #1E90FF; -fx-border-width: 2; -fx-text-fill: #1E90FF; -fx-font-size: 14px; -fx-background-radius: 20; -fx-border-radius: 20;;" text="Supprimer" />
+         </children>
+      </HBox>
+      <HBox layoutX="261.0" prefHeight="60.0" prefWidth="750.0" />
+   </children>
+</AnchorPane>
