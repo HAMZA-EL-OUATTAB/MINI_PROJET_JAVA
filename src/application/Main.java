@@ -11,9 +11,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/Notes.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/Profile_.fxml"));
             Parent root = loader.load();
-            Scene scene = new Scene(root, 886,800);
+            Scene scene = new Scene(root, 900.0,600.0);
 
             scene.getStylesheets().add(getClass().getResource("/View/application.css").toExternalForm());
             primaryStage.setTitle("Gestionnaire de Notes"); // Ajout du titre
