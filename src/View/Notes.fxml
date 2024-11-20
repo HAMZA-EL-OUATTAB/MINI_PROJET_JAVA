@@ -19,7 +19,6 @@
               </columns>
             </TableView>
             <Button layoutX="367.0" layoutY="683.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="153.0" text="Exporter" />
-            <Button layoutX="170.0" layoutY="683.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="153.0" text="test" />
          </children>
       </AnchorPane>
    </children>
